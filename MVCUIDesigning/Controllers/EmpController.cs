@@ -23,7 +23,7 @@ namespace MVCUIDesigning.Controllers
             ViewData["Salary"] = salary;
             return View("DisplayEmp1"); 
         }*/
-        /*[HttpPost]
+        /*[HttpPost] // using form collection
         public ViewResult AddEmp(FormCollection formCollection)
         {
             ViewData["Id"]=formCollection["id"];
@@ -35,7 +35,7 @@ namespace MVCUIDesigning.Controllers
         [HttpPost] //using model class
         public ViewResult AddEmp(Employee employee)
         {
-            return View("DisplayEmp2",employee);
+            return View("DisplayEmp2",employee); 
         }
     }
 }
