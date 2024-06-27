@@ -1,0 +1,36 @@
+﻿@model MVCUIDesigning.Models.Employee
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>DisplayEmp2</title>
+</head>
+<body>
+    <div> 
+        <table border="1" align="center" width="25%">
+            <caption>Employee Details</caption>
+            <tr>
+                <td>Id</td>
+                <td>@Model.Id</td>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td>@Model.Name</td>
+            </tr>
+            <tr>
+                <td>Job</td>
+                <td>@Model.Job</td>
+            </tr>
+            <tr>
+                <td>Salary</td>
+                <td>@Model.Salary</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
