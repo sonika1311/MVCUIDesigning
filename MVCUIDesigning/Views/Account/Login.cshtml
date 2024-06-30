@@ -1,0 +1,28 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        @*@using (Html.BeginForm("Validate","Account", FormMethod.Get))*@ @*just an example how to specify form method parameter*@
+        @using (Html.BeginForm("Validate", "Account"))
+        {
+        @Html.Label("Username", new {@class="text-info"}); <br />
+        @Html.TextBox("txtName","", new {placeholder="Enter Username"}); <br />
+        @Html.Label("Password", new { @class = "text-info" }); <br />
+        @Html.Password("txtPwd","", new { placeholder = "Enter Password" }); <br /> <br />
+        <input type="submit" value="Login" class="btn btn-success"/>
+        <input type="reset" value="Reset" class="btn btn-danger" />
+        }
+    </div>
+</body>
+</html>
