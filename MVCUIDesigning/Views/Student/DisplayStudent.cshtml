@@ -1,0 +1,26 @@
+﻿@model MVCUIDesigning.Models.Student
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>DisplayStudent</title>
+</head>
+<body>
+    <div> 
+        <h4>Student Details</h4>
+        <ul>
+            <li>Student id: @Model.Sid</li>
+            <li>Name : @Model.Name</li>
+            <li>Class : @Model.Class</li>
+            <li>Gender : @Model.Gender</li>
+            <li>Fees : @Model.Fees</li>
+            <li>Address : @Model.Address</li>
+        </ul>
+    </div>
+</body>
+</html>
