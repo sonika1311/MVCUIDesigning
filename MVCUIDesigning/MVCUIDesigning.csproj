@@ -159,6 +159,8 @@
     <Content Include="Scripts\bootstrap.bundle.js.map" />
     <Content Include="Views\Student\AddStudent.cshtml" />
     <Content Include="Views\Student\DisplayStudent.cshtml" />
+    <Content Include="Views\Student\AddStudentST.cshtml" />
+    <Content Include="Views\Student\DisplayStudentST.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

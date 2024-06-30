@@ -19,6 +19,16 @@ namespace MVCUIDesigning.Controllers
         {
             return View("DisplayStudent",student);
         }
+        [HttpGet]
+        public ViewResult AddStudentST()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ViewResult AddStudentST(Student student)
+        {
+            return View("DisplayStudentST", student);
+        }
 
     }
 }
