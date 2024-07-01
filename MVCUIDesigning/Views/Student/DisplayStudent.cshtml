@@ -12,6 +12,13 @@
 </head>
 <body>
     <div> 
+        @{ 
+            string strHeader = Html.Partial("_Header").ToString();
+            strHeader = strHeader.Replace("slateblue", "maroon");
+            strHeader = strHeader.Replace("150", "200");
+            MvcHtmlString htmlstr = new MvcHtmlString(strHeader);
+            @htmlstr
+        }
         <h4>Student Details</h4>
         <ul>
             <li>Student id: @Model.Sid</li>

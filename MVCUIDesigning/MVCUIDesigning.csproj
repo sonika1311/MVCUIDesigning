@@ -105,6 +105,14 @@
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Global.asax" />
+    <Content Include="Images\header.png" />
+    <Content Include="Images\images.jpg" />
+    <Content Include="Images\person1.jpg" />
+    <Content Include="Images\person2.jpg" />
+    <Content Include="Images\person3.jpg" />
+    <Content Include="Images\person4.jpg" />
+    <Content Include="Images\person5.png" />
+    <Content Include="Images\person6.jpg" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -161,6 +169,7 @@
     <Content Include="Views\Student\DisplayStudent.cshtml" />
     <Content Include="Views\Student\AddStudentST.cshtml" />
     <Content Include="Views\Student\DisplayStudentST.cshtml" />
+    <Content Include="Views\Shared\_Header.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -29,6 +29,9 @@ namespace MVCUIDesigning.Controllers
         {
             return View("DisplayStudentST", student);
         }
-
+        public PartialViewResult Header()
+        {
+            return PartialView("_Header");
+        }
     }
 }
