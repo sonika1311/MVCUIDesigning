@@ -1,0 +1,46 @@
+﻿@model List<MVCUIDesigning.Models.Customer>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>DisplayCustomers</title>
+</head>
+<body>
+    <h2 align="center">Customer Details</h2>
+    <div> 
+        @*@foreach(MVCUIDesigning.Models.Customer customer in Model){ 
+        <table border="1" align="center"  width="25%">
+            <tr>
+                <td rowspan="6"> <img src="@customer.Photo" height=225px width=225px/> </td>
+                <td>@customer.CustId</td>
+            </tr>
+            <tr>
+                <td>@customer.Name</td>
+            </tr>
+            <tr>
+                <td>@customer.Account</td>
+            </tr>
+            <tr>
+                <td>@customer.Balance</td>
+            </tr>
+            <tr>
+                <td>@customer.City</td>
+            </tr>
+            <tr>
+                <td>@customer.Status</td>
+            </tr>
+        </table>
+        }*@
+
+        @foreach (var customer in Model)
+        {
+            Html.RenderPartial("_CustomerView",customer);
+        }
+    </div>
+</body>
+</html>
